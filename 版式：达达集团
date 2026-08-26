@@ -5692,6 +5692,42 @@ div#rename-option-delete p::before {
  
 /* === 结束 Localization.css === */ 
  
+@media screen and (max-width: 1000px) {
+    #header {
+        z-index: 100;
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+
+:root {
+  --p-top-bar-container-background-color: var(--p-gray-1);
+  --p-top-bar-container-border-top-color: var(--p-gray-2);
+  --p-sidebar-background-color: transparent;
+  --p-sidebar-width: 18rem;
+  --p-main-side-margin: 0;
+  --p-main-extrude-margin: 0.5rem;
+}
+
+    div#header {
+     grid-template-areas:
+     'logo title user'
+     'logo title search'
+     'topbar topbar topbar';
+     grid-template-columns: 0.7fr 2fr 0.425fr;
+     grid-template-rows: calc(var(--p-header-height) * 2) calc(var(--p-header-height) * 1) calc(var(--p-header-height) * 1);
+     height: calc(var(--p-header-height) * 4);
+     display: grid;
+     align-items: center;
+     position: relative;
+    }
+
+    div#header h1 a::before {
+     width: calc(var(--p-header-height) * 2);
+     height: calc(var(--p-header-height) * 2);
+     background-size: contain;
 
  
 
