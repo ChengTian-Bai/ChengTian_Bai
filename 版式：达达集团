@@ -1,0 +1,36 @@
+.code {display: none;}
+[[/module]]
+[[code type="CSS"]]
+/* === Variables.css === */ 
+/* 
+* Variables.css
+ * 定义版式全局变量
+*/
+
+@import url("https://fontsapi.zeoseven.com/161/main/result.css"); /* Sarasa Gothic SC */
+@import url("data:text/css,%40font-face%7Bfont-family%3A%22ZSFT-hk%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2Fhk%2Fmain.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Anormal%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D"); /* zsft-hk */
+@import url("https://fontsapi.zeoseven.com/285/main/result.css"); /* Noto Serif CJK */
+
+:root {
+
+    /* 绝对调色盘 */
+    --p-white: #ffffff;
+    --p-white-gray: #f5f5f5;
+    --p-light-gray: #dedede;
+    --p-gray: #707070;
+    --p-dark-gray: #414141;
+    --p-black-gray: #1e1e1e;
+    --p-black: #000000;
+
+    --p-white-transparent-0-8: rgba(255, 255, 255, 0.85);
+    --p-white-transparent-0-6: rgba(255, 255, 255, 0.65);
+    --p-white-transparent-0-4: rgba(255, 255, 255, 0.4);
+    --p-white-transparent-0-2: rgba(255, 255, 255, 0.2);
+    --p-black-transparent-0-8: rgba(0, 0, 0, 0.85);
+    --p-black-transparent-0-6: rgba(0, 0, 0, 0.65);
+    --p-black-transparent-0-4: rgba(0, 0, 0, 0.4);
+    --p-black-transparent-0-2: rgba(0, 0, 0, 0.2);
+
+    --p-light-red: #dd7a7a;
+    --p-red: #e72a2a;
+    --p-dark-red: #7b1111;
